@@ -1,0 +1,344 @@
+body {
+    background-color: #222529;
+    overflow-x: hidden;
+}
+
+.nav-item {
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-toggler {
+    margin-top: 5px;
+}
+
+.navContainer{
+
+}
+
+a.active {
+    font-weight: bold;
+}
+
+/*#vimeo-container {*/
+/*    !*position: absolute;*!*/
+/*    !*display: block;*!*/
+/*    !*width: 100vw;*!*/
+/*    height: 70vh;*/
+/*    overflow: hidden;*/
+/*    !*min-height: 50vw;*!*/
+/*    !*min-width: 100vw;*!*/
+/*    !*max-height: 90vh;*!*/
+/*}*/
+
+/*!*.viframe {*!*/
+/*!*    min-height: 50vw;*!*/
+/*!*    min-width: 100vw;*!*/
+/*!*    max-height: 90vh;*!*/
+/*!*}*!*/
+
+/*.viframe {*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    left: 50%;*/
+
+
+/*    !*width: 100vw !important;*!*/
+/*    !*height: 56.25vw;*!*/
+/*    height: 95vh !important;*/
+
+/*    min-height: 90vh;*/
+/*    min-width: 175vh;*/
+/*    !*min-width: 100vw;*!*/
+
+/*    !*max-height: 100vh;*!*/
+
+/*    transform: translate(-50%, -3%);*/
+
+/*    z-index: -7;*/
+/*    !*display: block;*!*/
+/*}*/
+
+
+
+.fadeOnScroll
+{
+    opacity: 0.1;
+}
+
+#loadingVideo
+{
+    position: absolute;
+    top: 50vh;
+    /*left: 25vw;*/
+    z-index: 7;
+    text-align: center;
+    color: white;
+
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+#vimeo-container
+{
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    width: 100%;
+    height: 83vh;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+}
+
+.vimeo-on-deck, .card-on-deck
+{
+    position: absolute !important;
+    /*width:0 !important;*/
+    /*height:0 !important;*/
+    /*border:0 !important;*/
+    /*transform: translate(0%, 0%) !important;*/
+    /*visibility: hidden !important;*/
+    /*top: 0; !important;*/
+    /*left: 0; !important;*/
+    /*transform: translate(0%, 0%) !important;*/
+    /*display: none !important;*/
+}
+
+.viframe
+{
+    /*position: absolute;*/
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 90vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+}
+
+
+.carouselCard
+{
+    position: absolute;
+    top: 75vh;
+    right: 10vw;
+    z-index: 7;
+    background-color: rgba(33, 37, 41, 0.4);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0%;
+    font-weight: 700 !important;
+
+}
+
+/*.carouselCard h1 {*/
+/*    font-size: 100px;*/
+/*}*/
+
+
+/*.carousel-caption {*/
+/*    color: white;*/
+/*    position: absolute;*/
+/*    top: 37%;*/
+/*    left: 80%;*/
+/*    width: 200px;*/
+/*    z-index: 7;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    background-color: #2c3034;*/
+/*    padding: 10px 5px 5px 5px;*/
+/*    opacity: 0.9;*/
+/*}*/
+
+
+#about-section {
+    background-color: #58595b;
+}
+
+#about-header {
+    /*background-color: #3e3f41;*/
+    margin-top: 0px;
+}
+
+#about-header-text {
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+#about-subtext {
+    margin: 0 0 25px 0;
+    font-size: 37px;
+}
+
+#callToAction {
+    /*background-color: #27aae1;*/
+    font-size: 40px;
+}
+
+#contact-section {
+    background-color: #58595b;
+    font-size: 30px;
+}
+
+.contact-icon {
+    margin-bottom: 5px;
+}
+
+#contact-section h1 {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+#newsletter-button {
+    /*height: 75%;*/
+    font-size: 25px;
+    /*margin-top: 15px;*/
+}
+
+#brand-wall {
+    /*margin: 40px 0 40px 0 !important;*/
+    padding: 50px 0 50px 0;
+}
+
+#brand-wall h1 {
+    font-size: 70px;
+    margin-bottom: 28px;
+}
+
+.brandLogo {
+    font-size: 50px;
+}
+
+.omada-highlight {
+    color: #27aae1;
+    font-weight: 700;
+
+}
+
+
+.homepage-section {
+
+    padding: 30px 0 30px 0;
+    /*margin: 40px 0 40px 0;*/
+    /*border-radius: 20px;*/
+    font-family: 'Oswald', sans-serif;
+}
+
+@media screen and (max-width: 720px)
+{
+
+    #vimeo-container {
+        height: 70vh !important;
+    }
+
+    #about-header-text {
+        font-size: 40px !important;
+    }
+
+    #about-subtext {
+        font-size: 24px !important;
+    }
+    .fadeOnScroll {
+        opacity: 100% !important;
+    }
+    #callToAction {
+        font-size: 30px !important;
+    }
+
+    .carouselCard {
+        padding: 7px !important;
+    }
+
+    .carouselCard h1 {
+        font-size: 37px !important;
+    }
+
+    #brand-wall h1 {
+        font-size: 40px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .brandLogo {
+        font-size: 25px !important;
+    }
+
+    #contact-section {
+        font-size: 17px !important;
+    }
+
+    #contact-section h1 {
+        font-size: 40px !important;
+    }
+
+    #newsletter-button {
+        font-size: 17px !important;
+    }
+
+}
+
+
