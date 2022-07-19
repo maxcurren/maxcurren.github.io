@@ -43,6 +43,7 @@ $( document ).ready(function() {
 
     const cardFadeInSpeed = 2000;
     const cardFadeOutSpeed = 500;
+
     // playerArray[0].play();
 
     playerArray[0].play().then(function() {
@@ -114,6 +115,7 @@ $( document ).ready(function() {
     //     console.log("Player 3 done buffering");
     // });
 
+    const scrollFadeSpeed = 500;
 
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
@@ -122,12 +124,12 @@ $( document ).ready(function() {
         $('.fadeOnScroll').each( function(){
 
             // var objectTop = $(this).offset().top;
-            // var objectHalf = $(this).offset().top + ($(this).outerHeight() / 2);
-            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            var objectHalf = $(this).offset().top + ($(this).outerHeight() / 2);
+            // var objectBottom = $(this).offset().top + $(this).outerHeight();
             var windowBottom = $(window).scrollTop() + $(window).height();
 
             /* If the object is completely visible in the window, fade it in. Else, fade it out */
-            if( windowBottom > objectBottom ){
+            if( windowBottom > objectHalf ){
 
                 $(this).animate({'opacity':'1'},1000);
 

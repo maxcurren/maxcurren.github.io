@@ -243,6 +243,7 @@ a.active {
 #contact-section {
     background-color: #58595b;
     font-size: 30px;
+    margin-top: 100px;
 }
 
 .contact-icon {
@@ -257,27 +258,57 @@ a.active {
 #newsletter-button {
     /*height: 75%;*/
     font-size: 25px;
+    height: 75%;
     /*margin-top: 15px;*/
 }
 
 #brand-wall {
     /*margin: 40px 0 40px 0 !important;*/
-    padding: 50px 0 50px 0;
+    padding: 75px;
+    background-color: #58595b;
+    /*background-color: rgba(255, 255, 255, 0.25);*/
+    /*background-color: #ffffff;*/
+    /*background-color: white;*/
 }
 
-#brand-wall h1 {
+#brand-wall-header {
+    background-color: #222529;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+#brand-wall-header h1 {
     font-size: 70px;
-    margin-bottom: 28px;
+    font-family: 'Oswald', sans-serif;
+    /*margin-bottom: 37px;*/
 }
 
 .brandLogo {
-    font-size: 50px;
+    /*width: 7px;*/
+    width: 200px;
+    /*height: 100px;*/
+    /*min-height: 100px;*/
+    /*max-height: 200px;*/
+    /*overflow: hidden;*/
+    /*margin: 0 20px;*/
+}
+
+.brandLogo img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    /*width: 75%;*/
+    /*height: 100%;*/
+    /*max-width: 250px !important;*/
+    /*max-height: 125px;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*margin-bottom: 25px;*/
 }
 
 .omada-highlight {
     color: #27aae1;
     font-weight: 700;
-
 }
 
 
@@ -318,10 +349,6 @@ a.active {
         font-size: 37px !important;
     }
 
-    #brand-wall h1 {
-        font-size: 40px !important;
-        margin-bottom: 25px !important;
-    }
 
     .brandLogo {
         font-size: 25px !important;
@@ -337,6 +364,15 @@ a.active {
 
     #newsletter-button {
         font-size: 17px !important;
+    }
+
+    .brandLogo {
+        /*width: 100px !important;*/
+        /*height: 100px !important;*/
+    }
+
+    #brand-wall-header h1 {
+        font-size: 40px !important;
     }
 
 }
