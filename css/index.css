@@ -290,9 +290,9 @@ a.active {
     padding: 17px 50px;
 
     background-color: #58595b;
-    border: 1px solid #27aae1;
+    border: 3px solid #27aae1;
     border-radius: 25px;
-    filter: drop-shadow(0px 0px 22px #f0f0f0);
+    filter: drop-shadow(0px 0px 25px #f0f0f0);
     /*background-color: rgba(255, 255, 255, 0.25);*/
     /*background-color: #ffffff;*/
     /*background-color: white;*/
