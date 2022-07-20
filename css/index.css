@@ -292,10 +292,15 @@ a.active {
     background-color: #58595b;
     border: 3px solid #27aae1;
     border-radius: 25px;
-    filter: drop-shadow(0px 0px 25px #f0f0f0);
+    filter: drop-shadow(0px 0px 10px #f0f0f0);
+    animation: wallPulse 7s infinite;
     /*background-color: rgba(255, 255, 255, 0.25);*/
     /*background-color: #ffffff;*/
     /*background-color: white;*/
+}
+
+@keyframes wallPulse {
+    50% {filter: drop-shadow(0px 0px 50px #f0f0f0);}
 }
 
 #brand-wall-header {
@@ -326,7 +331,8 @@ a.active {
     object-fit: contain;
     width: 100%;
     height: 100%;
-    filter: drop-shadow(0px 6px 12px #222);
+    filter: drop-shadow(0px 0px 5px #f0f0f0);
+    /*animation: logoPulse 10s infinite;*/
     /*width: 75%;*/
     /*height: 100%;*/
     /*max-width: 250px !important;*/
@@ -335,6 +341,10 @@ a.active {
     /*height: 100%;*/
     /*margin-bottom: 25px;*/
 }
+
+/*@keyframes logoPulse {*/
+/*    50% {filter: drop-shadow(0px 0px 37px #f0f0f0);}*/
+/*}*/
 
 .omada-highlight {
     color: #27aae1;
