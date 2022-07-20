@@ -24,6 +24,10 @@ a.active {
     font-weight: bold;
 }
 
+main {
+    /*position: relative;*/
+}
+
 /*#vimeo-container {*/
 /*    !*position: absolute;*!*/
 /*    !*display: block;*!*/
@@ -222,7 +226,10 @@ a.active {
 
 #about-header {
     /*background-color: #3e3f41;*/
-    padding: 50px 0px;
+    /*padding: 50px 0px;*/
+    padding-top: 150px;
+    margin-top: -100px;
+    margin-bottom: 50px;
 }
 
 #about-header-text {
