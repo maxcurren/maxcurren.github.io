@@ -276,6 +276,11 @@ a.active {
     background-color: #b5b5b5;
 }
 
+/*!*.contact-info {*!*/
+/*    margin: 20px 0px;*/
+/*!*}*!*/
+
+
 #brand-wall-container {
     margin: 0px 0px 150px 0px;
 }
@@ -345,7 +350,7 @@ a.active {
 }
 
 footer {
-    padding: 12px 0px;
+    padding: 17px 0px;
 }
 
 footer p {
@@ -389,7 +394,7 @@ footer p {
     }
 
     #contact-section {
-        font-size: 17px !important;
+        font-size: 14px !important;
     }
 
     #contact-section h1 {
@@ -397,7 +402,7 @@ footer p {
     }
 
     #newsletter-button {
-        font-size: 17px !important;
+        font-size: 12px !important;
     }
 
     .brandLogo {
@@ -407,6 +412,18 @@ footer p {
 
     #brand-wall-header h1 {
         font-size: 40px !important;
+    }
+
+    .contact-icon {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    footer {
+        padding: 10px 0px !important;
+    }
+    footer p {
+        font-size: 12px !important;
     }
 
 }
