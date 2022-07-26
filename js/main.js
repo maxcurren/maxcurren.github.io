@@ -21,6 +21,38 @@ $( document ).ready(function() {
     // const player2 = new Vimeo.Player($("#vimeo-frame-2"));
     // const player3 = new Vimeo.Player($("#vimeo-frame-3"));
 
+    const scrollFadeSpeed = 500;
+    const initialScrollTop = $(window).scrollTop();
+
+    if(initialScrollTop <= 0)
+    {
+        $(window).scroll( function(){
+            $('.fadeOnScroll').each( function(){
+
+                // var objectTop = $(this).offset().top;
+                var objectHalf = $(this).offset().top + ($(this).outerHeight() / 2);
+                // var objectBottom = $(this).offset().top + $(this).outerHeight();
+                var windowBottom = $(window).scrollTop() + $(window).height();
+
+                /* If the object is completely visible in the window, fade it in. Else, fade it out */
+                if( windowBottom > objectHalf ){
+
+                    $(this).animate({'opacity':'1'},1000);
+
+                }
+                // else
+                // {
+                //     $(this).animate({'opacity':'0'},700);
+                // }
+
+            });
+        });
+    }
+    else
+    {
+        $('.fadeOnScroll').removeClass("fadeOnScroll");
+    }
+
 
     const playerArray = [];
     const viframeArray = [];
@@ -114,39 +146,6 @@ $( document ).ready(function() {
     // player3.on('bufferend', function(data) {
     //     console.log("Player 3 done buffering");
     // });
-
-    const scrollFadeSpeed = 500;
-
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-
-        /* Check the location of each desired element */
-        $('.fadeOnScroll').each( function(){
-
-            // var objectTop = $(this).offset().top;
-            var objectHalf = $(this).offset().top + ($(this).outerHeight() / 2);
-            // var objectBottom = $(this).offset().top + $(this).outerHeight();
-            var windowBottom = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fade it in. Else, fade it out */
-            if( windowBottom > objectHalf ){
-
-                $(this).animate({'opacity':'1'},1000);
-
-            }
-            // else
-            // {
-            //     $(this).animate({'opacity':'0'},700);
-            // }
-
-        });
-
-    });
-
-
-
-
-
 
 
 });

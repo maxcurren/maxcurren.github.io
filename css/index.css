@@ -307,12 +307,12 @@ main {
 }
 
 @keyframes wallPulse {
-    50% {filter: drop-shadow(0px 0px 50px #f0f0f0);}
+    50% {filter: drop-shadow(0px 0px 40px #f0f0f0);}
 }
 
 #brand-wall-header {
     background-color: #222529;
-    margin: 37.5px 0px;
+    margin: 50px 0px;
     /*padding: 37px 0;*/
     /*margin-top: 10px;*/
 }
@@ -373,9 +373,32 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 19px;
+    font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
+
+footer .social-link {
+    text-decoration: none;
+}
+
+footer .social-link svg
+{
+    margin: 2px 10px 0px 10px;
+    width: 30px !important;
+    height: 30px !important;
+    color: #27aae1;
+}
+
+footer .social-link svg:hover {
+    color: #63cfff;
+}
+
+footer .youtube svg
+{
+    width: 40px !important;
+    height: 40px !important;
+}
+
 
 @media screen and (max-width: 720px)
 {
