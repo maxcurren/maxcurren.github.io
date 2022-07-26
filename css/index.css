@@ -1,6 +1,8 @@
 body {
     background-color: #222529;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 .nav-item {
