@@ -11,10 +11,12 @@
     font-family: 'Oswald', sans-serif;
 }
 
-.work-section iframe
+.work-video
 {
     margin: 17px 0;
     width: 100%;
+    height: 550px;
+    /*height: 100%;*/
 }
 
 .work-section h1 {
@@ -31,8 +33,8 @@
 }
 .work-backstory {
     color: #212529;
-    font-size: 36px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .work-credits {
@@ -50,6 +52,11 @@
     font-weight: 700;
     font-size: 25px;
     margin: 0;
+}
+
+.work-credits li {
+    font-size: 20px;
+
 }
 
 .thumbnails img
